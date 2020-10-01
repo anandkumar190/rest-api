@@ -27,6 +27,10 @@ Route::group(['middleware' => 'auth:api'], function(){
 
 
 //provider routes
+    
+//     here we can use resource controller
+    //   may be optimized api codes
+    
 	Route::get('profile/update', 'API\UserController@provider_profile')
 	->middleware('Role:provider');
 
